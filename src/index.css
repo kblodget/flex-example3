@@ -25,10 +25,12 @@ code {
   display: flex;
   /*flex: 1; */
   left: 0;
+  /* comment out right:0 */
   right: 0;
   top: 144px;
   bottom: 43px;
   /*min-width: 550px;*/
+  /* comment out position:absolute */
   position: absolute;
 }
 
