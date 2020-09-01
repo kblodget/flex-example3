@@ -11,7 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
+.overView {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  flex-direction: row;
+}
+.max-content {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+.pageView {
+  display: flex;
+  height: 100%;
+  flex: 1 !important;
+  flex-direction: column !important;
+}
+#header {
+  display: flex;
+  flex-direction: column;
+}
 .page-wrapper {
   display: flex;
   flex: 1 1 0%;
@@ -22,6 +45,10 @@ code {
   display: flex;
   flex: 1 1 0%;
   position: unset;
+}
+.details-view .table-wrapper {
+  flex: 1;
+  display: flex;
 }
 .table-wrapper {
   display: flex;
@@ -35,7 +62,10 @@ code {
   /* comment out position:absolute */
   position: absolute;
 }
-
+.panel-open {
+  display: flex;
+  width: 35rem;
+}
 #panel-container {
   border: 2px black solid;
   width: 200px;
