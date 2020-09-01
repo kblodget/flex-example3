@@ -119,16 +119,20 @@ function App() {
   const [showPanel, setShowPanel] = useState(false);
 
   return (
-    <div>
-      <button onClick={() => setShowPanel(!showPanel)}>Toggle Panel</button>
-      <div className="page-wrapper">
-        <div className="details-view">
-          <div className="table-wrapper">
-            <Styles>
-              <Table columns={columns} data={data} />
-            </Styles>
+    <div className="overview">
+      <div className="page-view max-content">
+        <div id="header" className="max-content">
+          <button onClick={() => setShowPanel(!showPanel)}>Toggle Panel</button>
+          <div className="page-wrapper">
+            <div className="details-view">
+              <div className="table-wrapper">
+                <Styles>
+                  <Table columns={columns} data={data} />
+                </Styles>
+              </div>
+              <div className="panel-open"> {showPanel && <Panel />} </div>
+            </div>
           </div>
-          {showPanel && <Panel />}
         </div>
       </div>
     </div>
