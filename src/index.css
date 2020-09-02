@@ -62,6 +62,13 @@ code {
   /* comment out position:absolute */
   position: absolute;
 }
+.bzXjKq table {
+    border-spacing: 0;
+    border: 1px solid black;
+    /* min-width: 100%; */
+    /* width: 100%; */
+    width: calc(100% - 200px);
+}
 .panel-open {
   display: flex;
   width: 35rem;
